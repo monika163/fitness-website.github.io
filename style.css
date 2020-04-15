@@ -3,7 +3,7 @@ padding:0px;
 margin:0px;
 }
 #header{
-background-image: url('photo/f4.jpg');
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('photo/f4.jpg');
 background-size: cover;
 height: 80vh;
 background-position:center;
@@ -14,9 +14,9 @@ float: right;
 color: #fff!important;
 }
 .navbar-brand h3{
-width: 150px;
 margin-left: 30px;
 color: #fff;
+border-bottom: 6px solid #fff;
 }
 .navbar-toggler{
 border: none!important;
@@ -251,4 +251,35 @@ font-size: 15px;
 #footer .copyright{
 	margin-bottom: -80px;
 	text-align: center;
+}
+/**media query**/
+@media(max-width:768px){
+.welcome{
+padding: 25px 50px;
+}
+.feature-box{
+margin-top: 10px;
+margin-bottom: 40px;
+}
+#features{
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.feature-box .feature-left .fa{
+padding-top:1px;
+font-size: 40px;
+}
+.feature-box .feature-right h4{
+padding-top: 1px;
+padding-left:15px;
+}
+.feature-box .feature-right p{
+padding-bottom: 20px;
+padding-left:10px ;
+}
+}
+/********468*/
+@media(max-width:468px){
+#testimonials .col-md-4{
+padding: 20px 30px;
 }
